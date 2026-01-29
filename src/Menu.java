@@ -33,7 +33,6 @@ public class Menu {
             } catch (IllegalArgumentException e) {
                 System.out.println("Opcion no disponible");
             }
-
         } while (!salir);
     }
 
