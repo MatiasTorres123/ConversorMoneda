@@ -10,8 +10,8 @@ public class Conversor {
     public float Convertir(int numero,float cantidad) {
         String monedaBase=obtenerMonedaBase(numero);
         String monedaDestino=obtenerMonedaDestino(numero);
-
-        String url_str = "https://v6.exchangerate-api.com/v6/da7ee8ed64ecec0065546d23/latest/"+monedaBase;
+        String claveAPI="da7ee8ed64ecec0065546d23"; // ponga aca su clave
+        String url_str = "https://v6.exchangerate-api.com/v6/"+claveAPI+"/latest/"+monedaBase;
         URI direccion =URI.create(url_str);
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
