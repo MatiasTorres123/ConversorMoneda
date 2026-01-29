@@ -16,7 +16,6 @@ public class Menu {
                     7) Salir
                     Elija una opción válida:
                     """);
-
             try {
                 var busqueda = Integer.valueOf(lectura.nextLine());
                 Conversor consulta = new Conversor();
